@@ -13,7 +13,8 @@ CREATE TABLE IF NOT EXISTS connected_accounts (
     account_id VARCHAR(100),
     account_name VARCHAR(100),
     token TEXT,
-    token_expires_at TIMESTAMP
+    token_expires_at TIMESTAMP,
+    created_at TIMESTAMP DEFAULT now()
 );
 
 CREATE TABLE IF NOT EXISTS preferences (

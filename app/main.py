@@ -1,7 +1,9 @@
 from fastapi import FastAPI
 from app.routes import authorize
 from app.database import init_db
-
+from app import models
+from dotenv import load_dotenv
+load_dotenv()
 app = FastAPI()
 
 from fastapi.middleware.cors import CORSMiddleware
